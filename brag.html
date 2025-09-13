@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Как я провёл лето</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="icon" href="images/favicon.ico">
+</head>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Логотип">
+            <h1>Как я провёл лето</h1>
+        </div>
+        <nav>
+            <ul>
+                 <li><a href="index.html">Главная</a></li>
+                 <li><a href="trip.html">Поездка</a></li>
+                 <li><a href="it.html">IT</a></li>
+                 <li><a href="suffer.html">Страдания</a></li>
+                 <li><a href="brag.html">Похвастаться</a></li>
+            </ul>
+        </nav>
+    </header>
+<button id="musicBtn">▶ Включить музыку</button>
+<audio id="bgMusic" loop>
+  <source src="audio/mpeg/music.mp3" type="audio/mpeg">
+  Ваш браузер не поддерживает аудио.
+</audio>
+            <script>
+                document.addEventListener('DOMContentLoaded', () => {
+                const musicBtn = document.getElementById('musicBtn');
+                const bgMusic = document.getElementById('bgMusic');
+                let isPlaying = false;
+
+                musicBtn.addEventListener('click', () => {
+                    if (!isPlaying) {
+                        bgMusic.play();
+                        musicBtn.textContent = "⏸️ Остановить музыку";
+                        isPlaying = true;
+                    } else {
+                        bgMusic.pause();
+                        musicBtn.textContent = "▶ Включить музыку";
+                        isPlaying = false;
+        }
+    });
+});
+</script>
+    <main>
+        <h2>Похвастаться</h2>
+        <p>Все испытания оказались не напрасными. В итоге сайт ожил! Он перестал быть просто набором строк кода и превратился</p>
+       <p>в настоящий проект — с историей, воспоминаниями и атмосферой моего лета.</p>
+        <p>Я рад, что сумел довести всё до конца. Каждый раздел для меня словно трофей после долгого похода: и IT-практика, и </p>
+       <p>киношные находки, и даже ошибки, которые стали лучшими наставниками.</p>
+        <p>Иногда я открываю сайт и ловлю себя на мысли: «Неужели это сделал я?». И ответ простой — да, сделал. Теперь у меня есть не только воспоминания</p>
+        <p>о лете, но и проект, который можно показать другим и который всегда будет напоминать о пройденном пути.</p>
+        <div class ="brag1">
+            <img src="images/Success.jpg"> 
+        </div>
+    </main>
+        <footer>
+         <div class="marquee">
+         <span>2025 Мой летний сайт</span>
+        </div>
+        </footer>
+</body>
+</html>

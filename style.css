@@ -1,0 +1,203 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f5f9ff;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #4c8bf5;
+    color: white;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 10px;
+    vertical-align: middle;
+    width: 50px; 
+    height: auto;
+    margin-left: 0; 
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+    color: yellow;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.main-img {
+    max-width: 40%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    width: 50%;      
+    height: auto;    
+    display: block;  
+    margin: 0 auto;  
+}
+
+footer {
+    background: #4c8bf5;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    height: 60px; 
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+}
+#musicBtn {
+    position: fixed;       
+    bottom: 20px;          
+    left: 20px;            
+    background-color: #8ec1fc;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: background 0.3s ease;
+    z-index: 1000;         
+}
+
+#musicBtn:hover {
+    background-color: #357ABD;
+}
+nav ul {
+    display: flex;
+    justify-content: center; 
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 15px;
+    background-color: #4a90e2; 
+    padding: 10px;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: white;
+    color: #4a90e2;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #ffd700;
+    color: #333;
+}
+.brag1 img {
+    max-width: 40%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 50%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  background: #4c8bf5;  
+  color: white;
+  padding: 10px 0;
+  font-size: 18px;
+  font-weight: bold;
+  position: fixed;   
+  bottom: 17px;
+  left: 0;
+}
+
+.marquee span {
+  display: inline-block;
+  padding-left: 100%; 
+  animation: marquee 12s linear infinite;
+}
+
+@keyframes marquee {
+  0%   { transform: translateX(0%); }
+  100% { transform: translateX(-100%); }
+}
+button:active {
+  transform: scale(0.95); 
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+button {
+  background: linear-gradient(45deg, #3b82f6, #06b6d4);
+  color: white;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(45deg, #06b6d4, #3b82f6);
+}
+nav a {
+  position: relative;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 3px;
+  background: #ffc039;
+  transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+  width: 100%; 
+}
+nav a {
+  background: linear-gradient(45deg, #ffc039, #ffdb8f);
+}
+
+nav a:hover {
+  background: linear-gradient(45deg, #ffc039, #ffdb8f);
+}
+

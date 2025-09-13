@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Как я провёл лето</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="icon" href="images/favicon.ico">
+</head>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Логотип">
+            <h1>Как я провёл лето</h1>
+        </div>
+        <nav>
+            <ul>
+                 <li><a href="index.html">Главная</a></li>
+                 <li><a href="trip.html">Поездка</a></li>
+                 <li><a href="it.html">IT</a></li>
+                 <li><a href="suffer.html">Страдания</a></li>
+                 <li><a href="brag.html">Похвастаться</a></li>
+            </ul>
+        </nav>
+    </header>
+<button id="musicBtn">▶ Включить музыку</button>
+<audio id="bgMusic" loop>
+  <source src="audio/mpeg/music.mp3" type="audio/mpeg">
+  Ваш браузер не поддерживает аудио.
+</audio>
+            <script>
+                document.addEventListener('DOMContentLoaded', () => {
+                const musicBtn = document.getElementById('musicBtn');
+                const bgMusic = document.getElementById('bgMusic');
+                let isPlaying = false;
+
+                musicBtn.addEventListener('click', () => {
+                    if (!isPlaying) {
+                        bgMusic.play();
+                        musicBtn.textContent = "⏸️ Остановить музыку";
+                        isPlaying = true;
+                    } else {
+                        bgMusic.pause();
+                        musicBtn.textContent = "▶ Включить музыку";
+                        isPlaying = false;
+        }
+    });
+});
+</script>
+    <main>
+        <h2>Лето 2025</h2>
+    <p><strong>Лето 2025 — время солнца, приключений и новых открытий! ☀️</strong></p>
+    <p>Это лето было наполнено путешествиями, играми, книгами и IT-проектами.</p>
+    <p>Здесь я делюсь своими впечатлениями, яркими моментами и небольшими радостями, которые сделали это время незабываемым.</p>
+    <p>Погрузитесь в атмосферу моего лета и разделите со мной лучшие мгновения 2025 года!</p>
+        <div class ="index1">
+            <img src="images/head1.jpg" alt="Лето" class="main-img">
+        </div>
+    </main>
+        <footer>
+         <div class="marquee">
+         <span>2025 Мой летний сайт</span>
+        </div>
+        </footer>
+</body>
+</html>
